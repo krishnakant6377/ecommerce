@@ -1,0 +1,36 @@
+#NavBar{
+    display: flex;
+    justify-content:center;
+    text-align: center;
+    background-color: coral;
+    color: black;
+    border: 0.5px solid rgb(250, 249, 252);
+    margin-top: 0px;
+}
+#Link{
+    text-decoration: none;
+    color: black;
+    padding: 10px 30px;
+}
+#Link:hover{
+    /* background-color:transparent; */
+    background: linear-gradient(270deg,rgb(250, 100, 100),rgb(221, 247, 127));
+    color: white;
+    text-shadow: 2px 2px 2px rgb(235, 9, 20);
+    border:1px solid gray;
+}
+.Link{
+    border-left: 1px solid rgb(240, 126, 240);
+    border-right: 1px solid rgb(226, 98, 226);
+}
+/*MEDIA QUERY*/
+
+@media screen and (max-width:480px){
+    #NavBar{
+        justify-content:center;
+    }
+    #Link{
+        color: rgb(71, 5, 5);
+        padding: 15px 12px;
+    }
+}

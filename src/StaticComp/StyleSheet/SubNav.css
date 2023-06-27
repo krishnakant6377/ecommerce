@@ -1,0 +1,32 @@
+#title{
+    text-align: center;
+}
+#subNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#subNav-in{
+    margin-left:5px ;
+    margin-right:5px ;
+    margin-top:2px;
+    margin-bottom: 2px;
+    padding: 10px;
+}
+#subNav-in:hover{
+    color: rgb(31, 121, 224);
+    border-bottom: 2px solid rgb(31, 121, 224);
+}
+#title1{
+    text-align: center;
+    color:red;
+}
+@media screen and (max-width:400px){
+    #subNav-in{
+        margin-left:2px ;
+        margin-right:2px ;
+        margin-top:1px;
+        margin-bottom: 1px;
+    }
+}

@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+#sticky{
+  position:fixed;
+  top:0px;
+  left:0px;
+  z-index: +10;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#non-sticky{
+  position: relative;
+  top: 8rem;
 }
+/*Product - Details Page*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#DetailsProduct{
+  width: 30em;
+  padding-left:5%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#prodectDetails{
+  width: 70vw;
   display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background: linear-gradient(220deg,pink ,skyblue);
+}
+#green{
+  position: relative;
+  left: 150%;
+}
+#content1{
+  padding-left: 40px;
+}
+#Name{
+  font-size: 36px;
+}
+#Rating{
+  font-size: 33px;
+}
+#OfferPrice{
+  font-size: 40px;
+}
+
+/*Cart Page*/
+
+#cartItems{
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 10px;
+  padding-top: 20px;
+  text-align: center;
+  background-color: pink;
+}
+#cartContainer{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: white;
+}
+#Cartlist{
+  padding: 50px;
+  margin: 10px;
+  font-size: xx-large;
+}
+#reboot{
+  width: 100%;
+  height: 80px;
+  margin-bottom:20px ;
+  margin-top:20px ;
+}
+#linkStore{
+  background-color: pink;
+  color: white;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+#linkStore:hover{
+  background-color: rgb(15, 75, 240);
+}
+
+#cartbox,#cartbox2,#productdetails,#cartQuantity{
+  display: flex;
+  justify-content:space-around;
+  text-align: center;
+  align-items:center;
+}
+#cartbox2{
+  padding: 5px;
+  margin: 10px;
+}
+#productdetails{
+  padding-right: 30px;
+}
+.amount{
+  font-size: large;
+  font-weight: 600;
+}
+#cartQuantity{
+  margin: 20px;
+  padding: 50px;
+}
+.nutton,.nutton1{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.nutton{
+  background-color:chocolate;
 }
+.nutton1{
+  background-color:olive;
+}
+.amountTotal{
+  width: 100%;
+  height:90px;
+  text-align: center;
+  background-color: rebeccapurple;
+  color:burlywood;
+}
+.btn{
+  background-color: blanchedalmond;
+  color: chocolate;
+}
+h4 h2{
+  color:rgb(248, 230, 230);
+}
+#btnthree button{
+  width: 300px;
+  height: 40px;
+  color: rgb(243, 209, 209);
+  border: none;
+  margin: 10px;
+  margin-bottom: 20px;
+}
+#btnthree button:nth-child(1){
+  background-color: red;
+}
+#btnthree button:nth-child(2){
+  background-color: brown;
+}
+#btnthree button:nth-child(3){
+  background-color: orangered;
+}
+#btnthree button:nth-child(1):hover{
+  background-color: green;
+  font-size: 18px;
+  padding: 10px;
+}
+#btnthree button:nth-child(2):hover{
+  background-color: rgb(22, 155, 5);
+  font-size: 18px;
+  padding: 10px;
+}
+#btnthree button:nth-child(3):hover{
+  background-color: rgba(5, 18, 199, 0.966);
+  font-size: 18px;
+  padding: 10px;
+}
+#remove{
+  padding: 10px;
+  background-color: rgb(45, 116, 187);
+  border: none;
+}
+#remove:hover{
+  background-color: rgb(92, 3, 3);
+  color: white;
+}
+/*Login*/
+#user{
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: aqua;
+ 
+  padding: 50px;
+}
+#username,#password{
+  border-bottom:1px solid black;
+  background:linear-gradient(220deg,pink ,skyblue);
+  
+}
+#pageLog{
+  border: 10px  rgba(155, 128, 128, 0.651);
+  /* border-style: groove; */
+  padding: 50px;
+  margin: 10px;
+  background: linear-gradient(220deg,pink ,skyblue);
+  font-size: 2rem;
+  
+}
+#head{
+  text-decoration: underline;
+  text-align: center;
+}
+/* final */
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+#section{
+  display: grid;
+  grid-template-columns: repeat(auto-fill,250px);
+}
+#green{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*MEDIA QUERY*/
+
+@media screen and (max-width:900px){
+  .price{
+      display: none;
   }
-  to {
-    transform: rotate(360deg);
+  #prodectDetails{
+     flex-direction: column;
+      justify-content:center;
+      align-items:flex-start;
+      text-align: center;
+      padding-left: 5%;
+      padding-top: 5%;
+  }
+  #DetailsProduct{
+      width: 65vw;
+  }
+  #green{
+      position: relative;
+      right: 25%;
+  }
+  #content1{
+      text-align: center;
+      padding-left:5%;
+      padding-bottom: 20px;
+      width: auto;
+  }
+  #cartbox2{
+      padding: 1px;
+      margin-bottom: 10px;
+  }
+  #productdetails{
+      padding-right: 0px;
+      display: flex;
+      flex-direction: column;
+      transform: translateX(30px);
+  }
+  .amount1{
+      transform: translateX(60px);
+  }
+  .amount2{
+      transform: translateX(-40px);
+  }
+  #productdetails img{
+      width: 60px;
+      height: 60px;
+  }
+  #sn{
+      display:none;
+  }
+}
+@media screen and (max-width:700px) {
+  #green{
+      position: relative;
+      left: 30%;
+  }
+}
+@media screen and (max-width:800px) {
+  #green{
+      position: relative;
+      left: 50%;
+  }
+}
+@media screen and (max-width:400px) {
+  #green{
+      position: relative;
+      left: 10%;
+  }
+}
+@media screen and (max-width:600px) {
+  #green{
+      position: relative;
+      left: 10%;
   }
 }

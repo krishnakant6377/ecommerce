@@ -1,0 +1,43 @@
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    background-color: rgb(169, 224, 241);
+    padding: 18px;
+}
+#footer #two .one{
+    color: rgb(12, 71, 71);
+}
+#two #content{
+    text-align: left;
+}
+.two{
+    border-left: 1px solid rgb(92, 4, 4);
+    border-right: 1px solid rgb(94, 8, 8);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#icon{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+}
+#MoneyLink{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+@media screen and (max-width:600px){
+    #footer{
+        flex-direction: column;
+    }  
+    .footer{
+        display: none;
+    } 
+}
+@media screen and (max-width:910px){
+    #content{
+        width: auto;
+    } 
+}

@@ -1,0 +1,16 @@
+#shade:hover{
+    background-color: magenta;
+    color: white;
+    font-size: 16px;
+ }
+ #move{
+     overflow: hidden;
+ }
+ #move h4{
+     text-decoration: underline;
+ }
+ @media screen and (max-width:600px){
+     .footer{
+         flex-direction: column;
+     }
+ }
