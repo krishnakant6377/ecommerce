@@ -19,12 +19,16 @@ const Cart = () => {
   }
   const decreaseItem=(item)=>{
     dispatch(decreaseQuantity(item))
+    alert("item removed from cart")
   }
   const increaseItem=(item)=>{
+   
     dispatch(AddingtoCart(item))
+    alert("item increased")
   }
   const clearAllItems=(item)=>{
     dispatch(clearCart(item))
+    alert("no item in cart")
   }
   // //////////////////
     var orderId;

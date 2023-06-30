@@ -18,18 +18,19 @@ const Footer = () => {
             Follow-us in social media like face book and insta whats app for
             purchace,
             <div id="icon">
-                <img
+              <a href="https://www.facebook.com/login/"><img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZqTjy_WlpCpVb5abviBQSOL7CklFa4WKuuA&usqp=CAU"
                   width={40}
                   height={35}
                   alt="404_ERROR"
-                />
-                <img
+                /></a>  
+                <a href="https://www.instagram.com/accounts/login/"> <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU_uy3KFO2vuo-IwTeKJHu_o4K5gKYc5FULw&usqp=CAU"
                   width={50}
                   height={40}
                   alt="404_ERROR"
-                />
+                /></a>
+               
                 <img
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHH0y3j0Ihgw_JxhGlq_Qk3-xwfExz01MQ3Q&usqp=CAU"
                   width={50}
@@ -50,7 +51,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <br />
+      
       <Last />
       <div id="MoneyLink">
         <div>

@@ -1,6 +1,6 @@
 #Ads{
     display: flex;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
     align-items: center;
     /* border: 1px solid rgb(231, 225, 231); */
     padding: 30px;

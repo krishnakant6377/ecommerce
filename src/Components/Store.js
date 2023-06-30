@@ -27,7 +27,9 @@ const Store=()=>{
 
     const AddtoCart=(item)=>{
       console.log("Passing to the Slice by Action Creator",item)
+      
        dispatch(AddingtoCart(item))
+       alert("item Added Successfully to Cart")
     }
     const handleBuy=(item)=>{
       navigate(`/product/${item.id}`, { state: { item } })
@@ -57,7 +59,7 @@ const Store=()=>{
                 <b id="oprice">   ${item.Old_Price}</b>
               </strong>
               <br />
-              <button id="cart1" onClick={()=>AddtoCart(item)}>Add to Cart</button>
+              <button id="cart1" onClick={()=> AddtoCart(item)  }>Add to Cart</button>
               <button id="cart" onClick={()=>handleBuy(item)}>Buy Now</button>
             </div>
           );

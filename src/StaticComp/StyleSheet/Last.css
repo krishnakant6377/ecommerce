@@ -1,10 +1,17 @@
 #shade:hover{
-    background-color: magenta;
+    background-color:black;
     color: white;
     font-size: 16px;
  }
+ #shade{
+    text-decoration: none;
+    color: blue;
+ }
  #move{
      overflow: hidden;
+ }
+ #move a{
+    text-decoration: none;
  }
  #move h4{
      text-decoration: underline;
