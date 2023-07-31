@@ -28,6 +28,10 @@ const Cart = () => {
   }
   const clearAllItems=(item)=>{
     dispatch(clearCart(item))
+    alert("order placed successfully")
+  }
+  const clearAllItems2=(item)=>{
+    dispatch(clearCart(item))
     alert("no item in cart")
   }
   // //////////////////
@@ -148,7 +152,7 @@ const Cart = () => {
             <div id="btnthree">
                 <button onClick={()=>clearAllItems()}>Clear Cart</button>
                 <button onClick={()=>navigate('/store')}>Continue Shopping</button>
-                <button id="rzp-button1">Proceed to Payment</button>
+                <button id="rzp-button1" onClick={()=>clearAllItems2()}>Proceed to Payment</button>
             </div>
           </div>
 

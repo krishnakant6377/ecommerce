@@ -2,8 +2,7 @@ import {Link} from 'react-router-dom'
 import {useState,useEffect} from 'react';
 import {useNavigate} from "react-router-dom";
 // import axios from 'axios';
-  
-const userData = {};
+
 
 export const Register = () => {
   const [data,setData]=useState([]);
@@ -17,25 +16,20 @@ export const Register = () => {
   //           setData(res);
   //        })
   // },[data])
-  const [state, setState] = useState("");
-  const handleCheck = (e) => {
-    setState(e.target.value);
-    setData([]);
-  };
+
+ 
   const handleIn = () => {
-    if (userData.name === state) {
+ 
       alert("Successfully logged-in");
-    } else {
-      alert("Invalid Data");
-      navigate('/user/register')
-    }
+      navigate("/user/login")
+   
   };
   return (
     <div id="user">
        <div id="pageLog">
       <h2  id="head">SignUp</h2>
       <form action="">
-        EMAIL : <input type="email" id="username" name="Username" onChange={handleCheck} required/>
+        EMAIL : <input type="email" id="username" name="Username" required/>
         <br />
         <br />
         PASSWORD :
@@ -51,22 +45,19 @@ export const Register = () => {
   );
 };
 export const Login = () => {
-  const [state1, setState1] = useState("");
+
   const navigate=useNavigate();
-  const handleChange = (e) => {
-    setState1(e.target.value);
-  };
+
   const handleClick = () => {
-    userData.name = state1;
-    console.log(userData);
-    navigate('/user/login')
+  alert("loggedin successfully")
+    navigate('/')
   };
   return (
     <div id="user">
     <div id="pageLog">
       <h2 id="head">SignIn</h2>
       <form action="">
-        EMAIL : <input type="email" id="username" name="Username" onChange={handleChange} required />
+        EMAIL : <input type="email" id="username" name="Username"  required />
         <br />
         <br />
         PASSWORD :
